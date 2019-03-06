@@ -16,6 +16,7 @@ public class SchoolController {
 	@Autowired
 	SchoolService studentService;
 
+	
 	// http://localhost:8015/getSchoolDetails/school1
 	
 	//@RequestMapping(value = "/getSchoolDetails/{schoolname}", method = RequestMethod.GET)
@@ -51,7 +52,6 @@ public class SchoolController {
 	      Thread.sleep(3000);
 	      return "Welcome Hystrix";
 	   }
-	
 	   private String fallback_hello() {
 	      return "Request fails. It takes long time to response";
 	   }
