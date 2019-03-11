@@ -13,6 +13,3 @@ http://localhost:8015/hystrix
 
 STEP 4: COPY and PASTE into STEP 3
 http://localhost:8015/actuator/hystrix.stream
-
-
-

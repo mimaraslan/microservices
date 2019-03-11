@@ -1,4 +1,4 @@
-package com.howtodoinjava.example.employee;
+package com.mimaraslan;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class EmployeeServiceApplicationTests {
+public class MainApplicationTests {
 
 	@Test
 	public void contextLoads() {

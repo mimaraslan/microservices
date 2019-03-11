@@ -29,7 +29,7 @@ public class CompanyController {
 	public String getEmployees(@PathVariable int empId) {
 	
 			
-		String response = restTemplate.
+		String response = restTemplate
 				.exchange("http://employeeservice/findEmployeeDetails/"+empId
 				, HttpMethod.GET
 				, null
