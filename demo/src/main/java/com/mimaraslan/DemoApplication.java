@@ -11,7 +11,8 @@ public class DemoApplication {
 	}
 	
 
-	public void name() {
+	
+	public void myName() {
 		System.out.println("Test");
 	}
 
