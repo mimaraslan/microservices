@@ -1,0 +1,26 @@
+server:
+  port: 8025    
+  
+spring:    
+  application:
+    name: school-service      
+ 
+eureka:         
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+     
+#management:
+#  security:
+#    enabled: false  
+ 
+logging:
+  level:
+    com.self.sprintboot.learning.employee: DEBUG
