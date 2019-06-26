@@ -3,7 +3,7 @@ server:
   
 spring:    
   application:
-    name: school-service      
+    name: _05_school-service      
  
 eureka:         
   instance:

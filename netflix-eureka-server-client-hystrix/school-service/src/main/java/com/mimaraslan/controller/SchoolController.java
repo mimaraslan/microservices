@@ -1,6 +1,7 @@
 package com.mimaraslan.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,7 +16,8 @@ public class SchoolController {
 	@Autowired
 	SchoolService studentService;
 
-	@RequestMapping(value = "/getSchoolDetails/{schoolname}", method = RequestMethod.GET)
+	//@RequestMapping(value = "/getSchoolDetails/{schoolname}", method = RequestMethod.GET)
+	@GetMapping(value = "/getSchoolDetails/{schoolname}")
 	public String getStudents(@PathVariable String schoolname) {
 		System.out.println("Going to call student service to get data!");
 		return studentService.callStudentServiceAndGetData(schoolname);

@@ -1,8 +1,10 @@
 server:
   port: 8761
 # port: ${PORT:8761}
-
-spring:
+ 
+spring:    
+  application:
+    name: _01_eureka-server       
   boot:
     admin:
       context-path: /admin  #A different context path for admin server has been provided not conflicting with eureka

@@ -19,17 +19,17 @@ public class StudentController {
 		schooDB = new HashMap<String, List<Student>>();
 
 		List<Student> lst = new ArrayList<Student>();
-		Student std = new Student("Ali", "Class IV");
+		Student std = new Student("Lena", "Class IV");
 		lst.add(std);
-		std = new Student("Veli", "Class V");
+		std = new Student("Raya", "Class V");
 		lst.add(std);
 
 		schooDB.put("school1", lst);
 
 		lst = new ArrayList<Student>();
-		std = new Student("Omer", "Class III");
+		std = new Student("Katerina", "Class III");
 		lst.add(std);
-		std = new Student("Murat", "Class VI");
+		std = new Student("Yulya", "Class VI");
 		lst.add(std);
 
 		schooDB.put("school2", lst);

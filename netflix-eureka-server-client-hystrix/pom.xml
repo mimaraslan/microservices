@@ -42,10 +42,10 @@
 
 	<packaging>pom</packaging>
 	<modules>
-		<module>eureka-server</module>
-		<module>employee-service</module>
-		<module>company-service</module>
-		<module>student-service</module>
-		<module>school-service</module>
+		<module>_01_eureka-server</module>
+		<module>_02_employee-service</module>
+		<module>_03_company-service</module>
+		<module>_04_student-service</module>
+		<module>_05_school-service</module>
 	</modules>
 </project>

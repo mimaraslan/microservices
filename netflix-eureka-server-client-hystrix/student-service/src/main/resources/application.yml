@@ -1,9 +1,9 @@
 server:
-  port: 8020
+  port: 8024
   
 spring:    
   application:
-    name: student-service  
+    name: _04_student-service  
  
 eureka:
   instance:
