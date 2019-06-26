@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mimaraslan</groupId>
-	<artifactId>eureka-server</artifactId>
+	<artifactId>_01_eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>eureka-server</name>
 	<description>Eureka Server project for Spring Boot</description>

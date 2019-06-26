@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mimaraslan</groupId>
-	<artifactId>student-service</artifactId>
+	<artifactId>_04_student-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>student-service</name>
 	<description>Hystrix project for Spring Boot</description>

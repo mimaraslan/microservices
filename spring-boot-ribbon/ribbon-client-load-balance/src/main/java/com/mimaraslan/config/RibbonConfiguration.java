@@ -20,6 +20,5 @@ public class RibbonConfiguration {
     @Bean
     public IRule ribbonRule(IClientConfig config) {
         return new AvailabilityFilteringRule();
-    }
-    
+    }  
 }
