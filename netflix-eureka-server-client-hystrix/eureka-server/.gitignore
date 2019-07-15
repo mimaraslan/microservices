@@ -71,6 +71,3 @@ nb-configuration.xml
 
 ### OS X ### 
 .DS_Store
-*.metadata
-*.metadata/
-.metadata/

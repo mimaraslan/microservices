@@ -71,9 +71,3 @@ nb-configuration.xml
 
 ### OS X ### 
 .DS_Store
-
-### Folders ###
-*.metadata
-*.metadata/
-.metadata/
-/.project
