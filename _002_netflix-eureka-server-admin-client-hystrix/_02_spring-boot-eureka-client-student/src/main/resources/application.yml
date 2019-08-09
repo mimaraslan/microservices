@@ -1,0 +1,43 @@
+spring:    
+  application:
+    name: student-service   #current service name to be used by the eureka server
+  
+---
+eureka:         #tells about the Eureka server details and its refresh time
+  instance:
+    appname: _02_spring-boot-eureka-client-student  # ==> This is a instance of student-service
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+server:
+  port: 8081    #default port where the service will be started
+
+---
+spring:
+  profiles: student-service-replica01
+eureka:
+  instance:
+    appname: student-service  # ==> This is a instance of student-service
+  client:
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/ 
+server:
+  port: 8099   
+
+#eureka.client.register-with-eureka=false
+
+#  devtools:
+#    livereload:
+#      port: 35730        
+#logging:
+#  level:
+#    com.mimaraslan: DEBUG
+   

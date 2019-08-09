@@ -1,0 +1,27 @@
+server:
+  port: 8012    
+
+spring:    
+  application:
+    name: employeeservice
+ 
+eureka:         
+  instance:
+    leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5 
+     
+#management:
+#  security:
+#    enabled: false  
+ 
+logging:
+  level:
+    employee:
+      service: DEBUG
