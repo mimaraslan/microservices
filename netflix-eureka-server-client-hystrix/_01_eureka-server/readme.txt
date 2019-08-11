@@ -1,5 +1,5 @@
-STEP 1: OPEN
+STEP 1
 http://localhost:8761
 
-STEP 2: OPEN
+STEP 2
 http://localhost:8761/admin

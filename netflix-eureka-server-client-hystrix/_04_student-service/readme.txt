@@ -1,8 +1,8 @@
-STEP 1: OPEN
+STEP 1
 http://localhost:8761
 
-STEP 2: OPEN
+STEP 2
 http://localhost:8011/hystrix
 
-STEP 3: WRITE
+STEP 3: COPY and PASTE into STEP 2
 http://localhost:8011/actuator/hystrix.stream
