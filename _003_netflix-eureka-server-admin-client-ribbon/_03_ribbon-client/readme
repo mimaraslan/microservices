@@ -1,2 +1,4 @@
 OPEN
 http://localhost:9093
+
+http://localhost:9093/frontend

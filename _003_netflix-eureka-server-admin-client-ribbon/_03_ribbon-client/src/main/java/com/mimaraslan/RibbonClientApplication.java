@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 import com.mimaraslan.config.RibbonConfiguration;
 
-@RibbonClient(name = "_02_ribbon-server", configuration = RibbonConfiguration.class)
+@RibbonClient(name = "ribbonserver", configuration = RibbonConfiguration.class)
 @EnableDiscoveryClient
 @SpringBootApplication
 public class RibbonClientApplication {

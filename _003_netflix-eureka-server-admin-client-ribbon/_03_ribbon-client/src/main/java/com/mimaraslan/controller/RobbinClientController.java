@@ -26,7 +26,7 @@ public class RobbinClientController {
 
 	@GetMapping("/frontend")
 	public String frontend() {
-		String randomString = this.restTemplate.getForObject("http://robbin-server/backend", String.class);
+		String randomString = this.restTemplate.getForObject("http://robbinserver/backend", String.class);
 		return "Robbin Server Response :: " + randomString;
 	}
 }
