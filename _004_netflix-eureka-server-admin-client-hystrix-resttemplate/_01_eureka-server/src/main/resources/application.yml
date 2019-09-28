@@ -7,7 +7,7 @@ spring:
     name: _01_eureka-server       
   boot:
     admin:
-      context-path: /admin 
+      context-path: /admin  #A different context path for admin server has been provided not conflicting with eureka
        
 eureka:
   client:
@@ -17,3 +17,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 10
+ 
+#management:
+#  security:
+#    enabled: false
