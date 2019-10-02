@@ -7,9 +7,9 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>eureka-server</module>
-		<module>ribbon-server</module>
-		<module>ribbon-client</module>
+		<module>_01_eureka-server</module>
+		<module>_02_ribbon-server</module>
+		<module>_03_ribbon-client</module>
 	</modules>
 	
 </project>
