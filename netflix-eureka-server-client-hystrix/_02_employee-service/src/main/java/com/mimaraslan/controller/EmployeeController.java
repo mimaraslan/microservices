@@ -24,13 +24,12 @@ public class EmployeeController {
 
 	@RequestMapping(value = "/findEmployeeDetails/{employeeId}", method = RequestMethod.GET)
 	public Employee getEmployeeDetails(@PathVariable int employeeId) {
-		System.out.println("Getting Employee details for " + employeeId);
 
 		Employee employee = employeeData.get(employeeId);
 		if (employee == null) {
-
 			employee = new Employee(0, "N/A");
 		}
+		System.out.println("Getting Employee details for " + employeeId);
 		return employee;
 	}
 }
