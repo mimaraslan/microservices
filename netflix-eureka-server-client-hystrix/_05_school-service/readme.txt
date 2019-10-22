@@ -1,5 +1,5 @@
 STEP 1: OPEN
-http://localhost:8761/
+http://localhost:8761
 
 STEP 2: OPEN
 http://localhost:8025/hystrix
