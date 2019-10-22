@@ -4,6 +4,7 @@
 *.war
 *.ear
 .mtj.tmp/
+.mvn/wrapper
 hs_err_pid*
 
 ### Package Files ###
@@ -26,6 +27,7 @@ release.properties
 .classpath
 .project
 .settings/
+.mvn
 bin/
 tmp/
 *.tmp
@@ -71,6 +73,3 @@ nb-configuration.xml
 
 ### OS X ### 
 .DS_Store
-*.metadata
-*.metadata/
-.metadata/
