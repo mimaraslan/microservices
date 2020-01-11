@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class PaymentController {
-	
+
 	// http://localhost:8083
 	@RequestMapping("/")
 	public String HelloWorld() {
-		return "My Service 2";
+		return "Payment Service";
 	}
-	
+
 	// http://localhost:8083/payment/pay
 	@GetMapping("/payment/pay")
 	public String paymentProcess() {

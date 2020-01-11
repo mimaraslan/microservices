@@ -7,11 +7,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@ComponentScan({"com.mimaraslan.controller"})
+@ComponentScan({ "com.mimaraslan.controller" })
 public class PaymentApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PaymentApplication.class, args);
 	}
-
 }

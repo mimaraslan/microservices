@@ -16,26 +16,26 @@ public class BookController {
 
 	@Autowired
 	private EurekaClient eurekaClient;
-	
+
 	@Autowired
 	private RestTemplateBuilder restTemplateBuilder;
-	
+
 	// http://localhost:8084/call
 	@RequestMapping(value = "/call")
 	public String callServiceClass1() {
 		RestTemplate restTemplate = restTemplateBuilder.build();
 		InstanceInfo instanceInfo = eurekaClient.getNextServerFromEureka("myservice", false);
 		String url = instanceInfo.getHomePageUrl();
-		ResponseEntity<String> responseEntity = restTemplate.exchange(url,  HttpMethod.GET, null, String.class);
+		ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.GET, null, String.class);
 		return responseEntity.getBody();
 	}
-	
+
 	@Autowired
 	private RestTemplate restTemplate;
-	
+
 	// http://localhost:8084
 	@RequestMapping(value = "/")
 	public String callServiceClass() {
 		return restTemplate.getForEntity("http://myservice", String.class).getBody();
-	}	
+	}
 }
