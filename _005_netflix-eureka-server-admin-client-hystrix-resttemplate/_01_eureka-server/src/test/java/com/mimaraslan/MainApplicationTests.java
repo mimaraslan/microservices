@@ -1,4 +1,4 @@
-package com.mimaraslan.test;
+package com.mimaraslan;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -12,4 +12,5 @@ public class EmailApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
+
 }
