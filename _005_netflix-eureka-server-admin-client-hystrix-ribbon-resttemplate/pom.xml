@@ -5,10 +5,10 @@
 	http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mimaraslan</groupId>
-	<artifactId>_005_netflix-eureka-server-admin-client-hystrix-resttemplate</artifactId>
+	<artifactId>_005_netflix-eureka-server-admin-client-hystrix-ribbon-resttemplate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>_005_netflix-eureka-server-admin-client-hystrix-resttemplate</name>
-	<description>Netflix eureka server admin client hystrix project for Spring Boot</description>
+	<name>_005_netflix-eureka-server-admin-client-hystrix-ribbon-resttemplate</name>
+	<description>netflix-eureka-server-admin-client-hystrix-ribbon-resttemplate</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
