@@ -29,8 +29,7 @@ public class CompanyController {
 	public String getEmployees(@PathVariable int employeeId) {
 
 		String response = restTemplate.exchange("http://_02_employee-service/findEmployeeDetails/{employeeId}",
-				HttpMethod.GET, null, new ParameterizedTypeReference<String>() {
-				}, employeeId).getBody();
+				HttpMethod.GET, null, new ParameterizedTypeReference<String>() {}, employeeId).getBody();
 		System.out.println("Getting Employee details for " + employeeId);
 
 		System.out.println("Response Body " + response);
@@ -39,7 +38,6 @@ public class CompanyController {
 	}
 
 	public String fallbackMethod(int employeeid) {
-
 		return "Fallback response:: No employee details available temporarily";
 	}
 

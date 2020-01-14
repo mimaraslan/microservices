@@ -15,26 +15,25 @@ public class StudentController {
 
 	private static Map<String, List<Student>> schooDB = new HashMap<String, List<Student>>();
 
-	static {
-		schooDB = new HashMap<String, List<Student>>();
-
-		List<Student> lst = new ArrayList<Student>();
-		Student std = new Student("Lena", "Class IV");
-		lst.add(std);
-		std = new Student("Raya", "Class V");
-		lst.add(std);
-
-		schooDB.put("school1", lst);
-
-		lst = new ArrayList<Student>();
-		std = new Student("Katerina", "Class III");
-		lst.add(std);
-		std = new Student("Yulya", "Class VI");
-		lst.add(std);
-
-		schooDB.put("school2", lst);
-
-	}
+		static {
+			schooDB = new HashMap<String, List<Student>>();
+	
+			List<Student> lst = new ArrayList<Student>();
+			Student std = new Student("Lena", "Class IV");
+			lst.add(std);
+			std = new Student("Raya", "Class V");
+			lst.add(std);
+	
+			schooDB.put("school1", lst);
+	
+			lst = new ArrayList<Student>();
+			std = new Student("Katerina", "Class III");
+			lst.add(std);
+			std = new Student("Yulya", "Class VI");
+			lst.add(std);
+	
+			schooDB.put("school2", lst);
+		}
 
 	@RequestMapping(value = "/getStudentDetailsForSchool/{schoolname}", method = RequestMethod.GET)
 	public List<Student> getStudents(@PathVariable String schoolname) {
