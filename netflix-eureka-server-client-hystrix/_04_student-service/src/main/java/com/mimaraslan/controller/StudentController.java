@@ -19,6 +19,7 @@ public class StudentController {
 			schooDB = new HashMap<String, List<Student>>();
 	
 			List<Student> lst = new ArrayList<Student>();
+			
 			Student std = new Student("Lena", "Class IV");
 			lst.add(std);
 			std = new Student("Raya", "Class V");
@@ -35,6 +36,7 @@ public class StudentController {
 			schooDB.put("school2", lst);
 		}
 
+		// http://localhost:8014/getStudentDetailsForSchool/school1
 	@RequestMapping(value = "/getStudentDetailsForSchool/{schoolname}", method = RequestMethod.GET)
 	public List<Student> getStudents(@PathVariable String schoolname) {
 		System.out.println("Getting Student details for " + schoolname);

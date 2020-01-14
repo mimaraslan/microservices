@@ -1,9 +1,9 @@
 server:
-  port: 8010    
+  port: 8012    
 
 spring:    
   application:
-    name: _02_employee-service  
+    name: _02_employee-service
  
 eureka:         
   instance:

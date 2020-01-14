@@ -15,30 +15,38 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 @RestController
 public class CompanyController {
 
+	@Autowired
+	RestTemplate restTemplate;
+	
 	@Bean
 	@LoadBalanced
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
 
-	@Autowired
-	RestTemplate restTemplate;
-
-	@RequestMapping(value = "/employeeDetails/{employeeId}", method = RequestMethod.GET)
+	@RequestMapping(value = "/employeeDetails/{empId}", method = RequestMethod.GET)
 	@HystrixCommand(fallbackMethod = "fallbackMethod")
-	public String getEmployees(@PathVariable int employeeId) {
-
-		String response = restTemplate.exchange("http://_02_employee-service/findEmployeeDetails/{employeeId}",
-				HttpMethod.GET, null, new ParameterizedTypeReference<String>() {}, employeeId).getBody();
-		System.out.println("Getting Employee details for " + employeeId);
+	public String getEmployees(@PathVariable int empId) {
+	
+			
+		String response = restTemplate
+				.exchange("http://localhost:8012/findEmployeeDetails/"+empId
+			//	.exchange("http://_02_employee-service:8012/findEmployeeDetails/"+empId
+				, HttpMethod.GET
+				, null
+				, new ParameterizedTypeReference<String>() {
+			}, empId).getBody();
+		
+		
+		System.out.println("Getting Employee details for " + empId);
 
 		System.out.println("Response Body " + response);
 
-		return "Employee Id -  " + employeeId + " [ Employee Details " + response + " ]";
+		return "Employee Id -  " + empId + " [ Employee Details " + response + " ]";
 	}
 
 	public String fallbackMethod(int employeeid) {
-		return "Fallback response:: No employee details available temporarily";
+		return "Fallback response:: No employee details available temporarily "+ employeeid;
 	}
 
 }

@@ -2,7 +2,11 @@ STEP 1
 http://localhost:8761
 
 STEP 2
-http://localhost:8011/hystrix
+http://localhost:8014/getStudentDetailsForSchool/school1
+http://localhost:8014/getStudentDetailsForSchool/school2
 
-STEP 3: COPY and PASTE into STEP 2
-http://localhost:8011/actuator/hystrix.stream
+STEP 3
+http://localhost:8014/hystrix
+
+STEP 4: COPY and PASTE into STEP 3
+http://localhost:8014/actuator/hystrix.stream

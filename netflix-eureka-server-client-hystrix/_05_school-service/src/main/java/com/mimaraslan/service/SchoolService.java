@@ -13,6 +13,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 @Service
 public class SchoolService {
+	
 	@Autowired
 	RestTemplate restTemplate;
 	
@@ -20,7 +21,7 @@ public class SchoolService {
 	public String callStudentServiceAndGetData(String schoolname) {
 		System.out.println("Getting School details for " + schoolname);
 		String response = restTemplate
-				.exchange("http://localhost:8020/getStudentDetailsForSchool/{schoolname}"
+				.exchange("http://localhost:8014/getStudentDetailsForSchool/{schoolname}"
 				, HttpMethod.GET
 				, null
 				, new ParameterizedTypeReference<String>() {
@@ -36,7 +37,7 @@ public class SchoolService {
 	public String test1(String schoolname) {
 		System.out.println("Getting School details for " + schoolname);
 		String response = restTemplate
-				.exchange("http://localhost:8020/getStudentDetailsForSchool/{schoolname}"
+				.exchange("http://localhost:8014/getStudentDetailsForSchool/{schoolname}"
 				, HttpMethod.GET
 				, null
 				, new ParameterizedTypeReference<String>() {
@@ -52,7 +53,7 @@ public class SchoolService {
 	public String test2(String schoolname) {
 		System.out.println("Getting School details for " + schoolname);
 		String response = restTemplate
-				.exchange("http://localhost:8020/getStudentDetailsForSchool/{schoolname}"
+				.exchange("http://localhost:8014/getStudentDetailsForSchool/{schoolname}"
 				, HttpMethod.GET
 				, null
 				, new ParameterizedTypeReference<String>() {
