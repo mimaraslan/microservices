@@ -28,7 +28,6 @@ public class CompanyController {
 	@HystrixCommand(fallbackMethod = "fallbackMethod")
 	public String getEmployees(@PathVariable int empId) {
 	
-			
 		String response = restTemplate
 				.exchange("http://employeeservice/findEmployeeDetails/"+empId
 				, HttpMethod.GET

@@ -15,8 +15,7 @@ public class EmployeeController {
 
 	private static final Map<Integer, Employee> employeeData = new HashMap<Integer, Employee>() {
 
-		private static final long serialVersionUID = 1L;
-		{
+		private static final long serialVersionUID = 1L;{
 			put(1, new Employee(1, "Employee1"));
 			put(2, new Employee(2, "Employee2"));
 		}
