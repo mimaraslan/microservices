@@ -1,0 +1,35 @@
+server:
+  port: 8761
+  
+spring:    
+  application:
+    name: service-main-eureka-server     
+  boot:
+    admin:
+      context-path: /admin 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+          defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      defaultZone: http://localhost:8761/eureka/
+#  server:
+#    waitTimeInMsWhenSyncEmpty: 0    #wait time for subsequent sync   
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10    
+#    lease-expiration-duration-in-seconds: 5 # wait up hearbeat for microservices up to 5 sec
+
+#management:
+#  security:
+#    enabled: false    
