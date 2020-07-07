@@ -6,22 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:52466",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:52466",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "52466"
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "http://localhost:9001",
 			"request": {
 				"method": "GET",
@@ -73,33 +57,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9003",
+			"name": "http://localhost:9002/info",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9003",
+					"raw": "http://localhost:9002/info",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "9003"
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:9004",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:9004",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "9004"
+					"port": "9002",
+					"path": [
+						"info"
+					]
 				}
 			},
 			"response": []
