@@ -1,10 +1,7 @@
 STEP 1
 http://localhost:9001/service1/1
-
 http://localhost:9001/service1/2
-
 http://localhost:9001/service1/99
-
 
 STEP 2
 http://localhost:8761
@@ -19,7 +16,6 @@ http://localhost:9001/hystrix
 STEP 5: COPY and PASTE into STEP 4
 http://localhost:9001/actuator/hystrix.stream
 http://192.168.1.101:9001/actuator/hystrix.stream
-
 
 STEP 6
 cd /Volumes/Store/workspace/microservices/microservices-demo/service-a1/target/
