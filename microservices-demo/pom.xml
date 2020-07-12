@@ -22,5 +22,7 @@
 		<module>service-main-zuul-api-gateway-server</module>
 		<module>service-a1</module>
 		<module>service-b1</module>
+		
+		
 	</modules>
 </project>
