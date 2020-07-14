@@ -1,10 +1,10 @@
-package com.mimaraslan.cloud.stream.api;
+package com.mimaraslan.spring.cloud.stream.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringCloudStreamPublisherApplicationTests {
+class SpringCloudStreamConsumerApplicationTests {
 
     @Test
     void contextLoads() {

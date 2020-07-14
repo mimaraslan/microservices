@@ -9,15 +9,19 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.mimaraslan</groupId>
-    <artifactId>spring-cloud-stream-publisher</artifactId>
+    <artifactId>spring-cloud-stream-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-stream-publisher</name>
+    <name>spring-cloud-stream-consumer</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2020.0.3</spring-cloud.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
