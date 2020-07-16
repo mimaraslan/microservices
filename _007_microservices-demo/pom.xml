@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.example</groupId>
-	<artifactId>microservices-demo</artifactId>
+	<artifactId>_007_microservices-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservices-demo</name>
+	<name>_007_microservices-demo</name>
 	<description>Netflix eureka server admin client hystrix project for Spring Boot</description>
 
 	<properties>
@@ -21,8 +21,6 @@
 		<module>service-main-cloud-config-server</module>
 		<module>service-main-zuul-api-gateway-server</module>
 		<module>service-a1</module>
-		<module>service-b1</module>
-		
-		
+		<module>service-b1</module>		
 	</modules>
 </project>
