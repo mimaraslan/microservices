@@ -6,7 +6,7 @@
 	<artifactId>_008_spring-cloud-streaming</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-cloud-streaming</name>
-	<description>Demo project for Spring Cloud Streaming</description>
+	<description>Spring Cloud Streaming</description>
 	
 	<properties>
 		<java.version>11</java.version>
@@ -14,8 +14,8 @@
 	
 	<packaging>pom</packaging>
 	<modules>
-		<module>spring-cloud-stream-publisher</module>
-		<module>spring-cloud-stream-consumer</module>
+		<module>_01_spring-cloud-stream-publisher</module>
+		<module>_02_spring-cloud-stream-consumer</module>
 	</modules>
 
 </project>
