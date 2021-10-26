@@ -21,6 +21,25 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -28,6 +47,15 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>main-service-spring-cloud-remote-config-server</module>
+        <module>main-service-spring-cloud-remote-config-server</module>
+        <module>service-a1</module>
+        <module>service-b1</module>
+        <module>service-limits</module>
+    </modules>
 
     <build>
         <plugins>
