@@ -122,3 +122,14 @@ Thumbs.db
 /node_modules
 /dist
 package-lock.json
+_009_netflix-microservices/main-service-spring-cloud-eureka-server/.mvn/wrapper/maven-wrapper.properties
+
+_009_netflix-microservices/main-service-spring-cloud-eureka-server/mvnw
+
+_009_netflix-microservices/main-service-spring-cloud-remote-config-server/mvnw
+
+_009_netflix-microservices/service-b1/mvnw
+
+_009_netflix-microservices/service-limits/mvnw
+
+_009_netflix-microservices/limits-service/mvnw
