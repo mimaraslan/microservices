@@ -14,6 +14,8 @@
     <name>main-service-spring-cloud-remote-config-server</name>
     <description>main-service-spring-cloud-remote-config-server</description>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>17</java.version>
         <spring-cloud.version>2021.0.1</spring-cloud.version>
     </properties>
