@@ -9,7 +9,7 @@
 		<version>2.3.3.RELEASE</version>
 		<relativePath />
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>com.mimaraslan</groupId>
 	<artifactId>service-b1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>service-a1</name>
@@ -18,8 +18,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>11</java.version>
-		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
+		<java.version>17</java.version>
+		<spring-cloud.version>2021.0.1</spring-cloud.version>
 	</properties>
 
 	<dependencies>
