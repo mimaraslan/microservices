@@ -1,0 +1,55 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: main-service-spring-cloud-zuul-api-gateway-server
+#  security:
+#    user:
+#      name: user
+#      password: user
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    routes:
+      enabled: true
+                         
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+  
+#zuul:
+#  ignored-services: '*'
+#  host:
+#    max-total-connections: 1000
+#    max-per-route-connections: 1000
+#  routes:
+#    service-a1:
+#      url: http://localhost:9001
+#    service-b1:
+#      url: http://localhost:9002
+#    service-c1:
+#      url: http://localhost:9003
+#    service-d1:
+#      url: http://localhost:9004
+#    log-service:
+#      path: /log/**
+#      sensitive-headers: null
+#      service-id: log-service
+#      strip-prefix: false
+#    admission-service:
+#      path: /admission/**
+#      sensitive-headers: null
+#      service-id: admission-service
+#      strip-prefix: false
+        
