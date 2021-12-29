@@ -23,13 +23,6 @@ public class MyMicroservice2Controller {
 
 	@Autowired
 	RestTemplate restTemplate;
-
-	@Bean
-	@LoadBalanced
-	RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
-	
 	
 	private static final Map<Integer, MyMicroservice2> myMicroervice2Data = new HashMap<Integer, MyMicroservice2>() {
 
